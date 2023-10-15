@@ -1,0 +1,172 @@
+:root{
+    --repoBoxSize: 200px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #282828;
+    background-image: url('img/bg-image.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+    margin: 2%;
+    margin-top: 90px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.Menu{
+    background-color: #171717;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Menu ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.Menu li{
+    padding-left: 10px;
+}
+
+.Menu a{
+    display:block
+}
+
+.Menu img{
+    vertical-align: middle;
+    margin-bottom: 6px;
+}
+
+.Menu span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a{
+    color:#34C700;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #8dff64;
+}
+
+.Container::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.LeftMain{
+    float: left;
+    padding: 15px;
+    width: 75%;
+}
+
+.Presentation{
+    margin-bottom: 50px;
+}
+
+#myName{
+    font-family: monospace;
+    font-size: 32px;
+    font-weight: lighter;
+    color: #34C700;
+    font-weight: lighter;
+}
+
+#gitHubSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.Repositories{
+    background-color: #353535;
+    display: flex;
+    height: var(--repoBoxSize);
+    text-align: left;
+    border-radius: 25px;
+}
+
+.RightSide{
+    float: left;
+    text-align: left;
+    font-size: medium;
+    padding: 15px;
+    width: 25%;
+    line-height: 20px;
+}
+
+.RightSide a{
+    color: white;
+    text-decoration: underline;
+}
+
+.RightSide a:hover{
+    color: #8dff64;
+    text-decoration: underline;
+}
+
+.RightSide ul{
+    list-style-type: none;
+}
+
+
+
+.Repositories img{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: var(--repoBoxSize);
+}
+
+.RepositoryTitle{
+    color: #34C700;
+}
+
+.RepositoryDescription{
+    color: white;
+    margin: 8px;
+}
+
+@media only screen and (max-width: 1080px){
+    .LeftMain{
+        width: 100%;
+    }    
+
+    .RightSide{
+        width: 100%;
+    }
+
+    #gitHubSection{
+        font-size: small;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .Repositories img{
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        width: 100px;
+    }
+
+    .Repositories{
+        background-color: #353535;
+        display: flex;
+        height: 100px;
+        text-align: left;
+        border-radius: 25px;
+    }
+}
