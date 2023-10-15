@@ -100,6 +100,25 @@ a:hover{
     border-radius: 25px;
 }
 
+.Repositories img{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: var(--repoBoxSize);
+}
+
+.RepositoryDescription{
+    color: white;
+    margin: 8px;
+    display: block;
+}
+
+.RepositoryTitle{
+    font-weight: bold;
+    margin-top: 1%;
+    color: #34C700;
+}
+
+
 .RightSide{
     float: left;
     text-align: left;
@@ -123,43 +142,22 @@ a:hover{
     list-style-type: none;
 }
 
-
-
-.Repositories img{
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    width: var(--repoBoxSize);
+@media only screen and (max-width: 1465px){
+    .RepositoryDescriptionText{
+        font-size: 14px;
+    }
 }
 
-.RepositoryTitle{
-    color: #34C700;
-}
-
-.RepositoryDescription{
-    color: white;
-    margin: 8px;
-}
-
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 1200px){
     .LeftMain{
         width: 100%;
     }    
 
-    .RightSide{
-        width: 100%;
-    }
-
     #gitHubSection{
-        font-size: small;
+        font-size: 10px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-    }
-
-    .Repositories img{
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
-        width: 100px;
     }
 
     .Repositories{
@@ -168,5 +166,29 @@ a:hover{
         height: 100px;
         text-align: left;
         border-radius: 25px;
+    }
+
+    .Repositories img{
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        width: 100px;
+    }
+
+    .RepositoryDescription{
+        font-size: medium;
+    }
+
+    .RepositoryDescriptionText{
+        font-size: small;
+    }
+
+    .RightSide{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .RepositoryDescriptionText{
+        font-size: 9px;
     }
 }
