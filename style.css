@@ -2,10 +2,12 @@
     --repoBoxSize: 200px;
 }
 
+/* Considera borda como o tamanho real da caixa */
 *{
     box-sizing: border-box;
 }
 
+/* Estilizações simples */
 body{
     background-color: #282828;
     background-image: url('img/bg-image.png');
@@ -20,10 +22,12 @@ body{
     font-weight: lighter;
 }
 
+/* Inicio estilos do Menu */
 .Menu{
     background-color: #171717;
     width: 100%;
-    position: fixed;
+    /* Configurações para manter este elemento fixo na tela: */
+    position: fixed; 
     top: 0;
     left: 0;
 }
@@ -61,31 +65,28 @@ a:hover{
     text-decoration: underline;
     color: #8dff64;
 }
+/* fim estilos do Menu */
 
-.Container::after{
-    content: "";
-    clear: both;
-    display: block;
-}
-
+/* Inicio estilos do formação */
 .LeftMain{
     float: left;
     padding: 15px;
     width: 75%;
 }
 
+/* estilização adequada para exibir o primeiro conteúdo */
 .Presentation{
     height: 90vh
 }
 
 #myName{
-    font-family: monospace;
     font-size: 32px;
     font-weight: lighter;
     color: #34C700;
     font-weight: lighter;
 }
 
+/* define a região onde se encontram os links úteis dentro da pagina */
 .Util{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -93,6 +94,7 @@ a:hover{
     border: 1px;
 }
 
+/* estilização do <a> */
 .Util a{
     display:block;
     padding-top: 5px;
@@ -103,6 +105,7 @@ a:hover{
     margin-bottom: 15px;
 }
 
+/* Alinhamento dos pequenos icones ao lado dos textos dos links */
 .Util img{
     vertical-align: middle;
 }
@@ -111,6 +114,7 @@ a:hover{
     display: inline-block;
     vertical-align: middle;
 }
+
 
 #aboutMe,
 #aboutEducation{
@@ -131,6 +135,7 @@ a:hover{
     gap: 20px;
 }
 
+/* estilização da sessão gitHub */
 .Repositories{
     background-color: #353535;
     display: flex;
@@ -157,7 +162,7 @@ a:hover{
     color: #34C700;
 }
 
-
+/* estilos da <div> direita */
 .RightSide{
     position: fixed;
     right: 0;
@@ -183,10 +188,11 @@ a:hover{
     list-style-type: none;
 }
 
+/* formatações do formulario */
 form {
     background-color: #353535;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 label {
@@ -210,6 +216,7 @@ form input[type="submit"] {
     background-color: #34C700;
 }
 
+/* Apenas reduz as fontes para caber na lagura de tela */
 @media only screen and (max-width: 1465px){
     .RepositoryDescriptionText{
         font-size: 14px;
@@ -220,6 +227,7 @@ form input[type="submit"] {
 
 }
 
+/* Altera a posição da <div> RightSide e modifica a estilização dos repositorios */
 @media only screen and (max-width: 1200px){
     .LeftMain{
         width: 100%;
@@ -262,6 +270,7 @@ form input[type="submit"] {
     }
 }
 
+/* Altera os links úteis */
 @media only screen and (max-width: 860px){
     .Util{
         display: block;
@@ -278,6 +287,7 @@ form input[type="submit"] {
     }
 }
 
+/* reduz o tamanho da letra da descrição dos repositórios */
 @media only screen and (max-width: 768px){
     .RepositoryDescriptionText{
         font-size: 9px;

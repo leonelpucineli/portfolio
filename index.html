@@ -12,6 +12,7 @@
 <body>
     <div class="Menu">
         <ul>
+            <!-- Cada <li> é um item no menu fixo no topo da tela. -->
             <li><a href="https://www.linkedin.com/in/leonelpucineli">
                 <img src="img/linkedin-icon.png" style="height: 30px;">
                 <span>LinkedIn</span>
@@ -24,13 +25,17 @@
         </ul>
     </div>
 
-    <div class="Container">
+    <div class="Container"> 
+        <!-- <div> exibida a esquerda nos dispositivos de telas grandes, como computadores -->
+        <!-- CTRL+F '@media only screen' no style.css para outras visualizações-->
         <div class="LeftMain">
+            <!-- Primeira tela visualizada -->
             <div class="Presentation">
                 <p>Olá, Mundo!<p>
                 <h1 id="myName">Sou Leonel Pucinéli</h1>
                 <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
                 <div class="Util">
+                    <!-- Botões de referência nessa página -->
                     <a href="#aboutMe">
                         <span>Sobre mim</span>
                         <img src="img/Me-as-an-icon-white.png" style="height: 23px;">
@@ -49,11 +54,13 @@
                 </div>
             </div>
 
+            <!-- Segunda tela visualizada -->
             <div id="aboutMe">
                 <h1><br><br> Sobre mim</h1>
                 <p>Sou estudante de programação há 2 anos, desde pequeno sonhava em ser piloto com devaneios intercalados de "Acho que quero um trabalho que dependa de lógica" e cá estamos, sou um programador. Pra falar um pouco de hobbies: sou apaixonado por automobilismo real e virtual, estudo música e gosto muito de filosofia.</p>
             </div>
 
+            <!-- Terceira tela visualizada -->
             <div id="aboutEducation">
                 <h1><br><br>Conhecimentos e Formação</h1>
                 <ul>
@@ -68,11 +75,13 @@
                 Você pode ver alguns dos meus trabalhos logo abaixo ou acessando o meu perfil no GitHub (<a href="https://github.com/leonelpucineli">/leonelpucineli</a>).
             </p>
             
+            <!-- Quarta tela visualizada -->
             <section id="gitHubSection">
+                <!-- Cada <a> é um dos meus repositórios gitHub -->
                 <a  href="https://github.com/leonelpucineli/Cofrinho" target="_blank">
                     <div class="Repositories">
                         <div class="RepositoryImg">
-                            <img src="img/bgGitHubRepository.png" alt="">
+                            <img src="img/repository.png" alt="">
                         </div>
                         
                         <div class="RepositoryDescription">
@@ -85,7 +94,7 @@
                 <a  href="https://github.com/leonelpucineli/leonelpucineli.github.io" target="_blank">
                     <div class="Repositories">
                         <div class="RepositoryImg">
-                            <img src="img/bgGitHubRepository.png" alt="">
+                            <img src="img/repository.png" alt="">
                         </div>
                         
                         <div class="RepositoryDescription">
@@ -98,7 +107,7 @@
                 <a  href="https://github.com/leonelpucineli/Tarefas">
                     <div class="Repositories">
                         <div class="RepositoryImg">
-                            <img src="img/bgGitHubRepository.png" alt="">
+                            <img src="img/repository.png" alt="">
                         </div>
                         
                         <div class="RepositoryDescription">
@@ -113,7 +122,7 @@
                 <a  href="https://github.com/leonelpucineli/Tarefas">
                     <div class="Repositories">
                         <div class="RepositoryImg">
-                            <img src="img/bgGitHubRepository.png" alt="">
+                            <img src="img/repository.png" alt="">
                         </div>
                         
                         <div class="RepositoryDescription">
@@ -129,8 +138,8 @@
                 
         </div>
 
+        <!-- <div> exibida a direita da tela, contém apenas o formulário -->
         <div class="RightSide" id="contactInfo">
-
             <p>Informações de contato</p>
             <form>
                 <label for="nome">Nome: <br></label>
