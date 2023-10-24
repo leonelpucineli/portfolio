@@ -30,6 +30,36 @@
                 <p>Olá, Mundo!<p>
                 <h1 id="myName">Sou Leonel Pucinéli</h1>
                 <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+                <div class="Util">
+                    <a href="#aboutMe">
+                        <span>Sobre mim</span>
+                        <img src="img/Me-as-an-icon-white.png" style="height: 23px;">
+                    </a>
+
+                    <a href="#aboutEducation">
+                        <span>Conhecimentos e Formação</span>
+                        <img src="img/Book-icon-white.png" style="height: 23px;">
+                    </a>
+
+                    <a href="#contactInfo">
+                        <span>Entrar em contato</span>
+                        <img src="img/at.png" style="height: 23px;">
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="aboutMe">
+                <h1><br><br> Sobre mim</h1>
+                <p>Sou estudante de programação há 2 anos, desde pequeno sonhava em ser piloto com devaneios intercalados de "Acho que quero um trabalho que dependa de lógica" e cá estamos, sou um programador. Pra falar um pouco de hobbies: sou apaixonado por automobilismo real e virtual, estudo música e gosto muito de filosofia.</p>
+            </div>
+
+            <div id="aboutEducation">
+                <h1><br><br>Conhecimentos e Formação</h1>
+                <ul>
+                    <li>Inglês (posso me comunicar plenamente neste idioma)</li>
+                    <li>Cursando Análise e Desenvolvimento de Sistemas pela Uninter</li>
+                </ul>
             </div>
 
             <p>
@@ -39,7 +69,7 @@
             </p>
             
             <section id="gitHubSection">
-                <a  href="https://github.com/leonelpucineli/Cofrinho">
+                <a  href="https://github.com/leonelpucineli/Cofrinho" target="_blank">
                     <div class="Repositories">
                         <div class="RepositoryImg">
                             <img src="img/bgGitHubRepository.png" alt="">
@@ -52,20 +82,20 @@
                     </div>
                 </a>
                 
-                <a  href="https://github.com/leonelpucineli/Cofrinho">
+                <a  href="https://github.com/leonelpucineli/leonelpucineli.github.io" target="_blank">
                     <div class="Repositories">
                         <div class="RepositoryImg">
                             <img src="img/bgGitHubRepository.png" alt="">
                         </div>
                         
                         <div class="RepositoryDescription">
-                            <p class="RepositoryTitle">Cofrinho</p>
-                            <p class="RepositoryDescriptionText">Este repositório foi feito em um estudo de Java e possui varios</p>
+                            <p class="RepositoryTitle">Portfólio</p>
+                            <p class="RepositoryDescriptionText">Este é o repositório onde esta página está armazenada.</p>
                         </div>
                     </div>
                 </a>
 
-                <a  href="https://github.com/leonelpucineli/Cofrinho">
+                <a  href="https://github.com/leonelpucineli/Tarefas">
                     <div class="Repositories">
                         <div class="RepositoryImg">
                             <img src="img/bgGitHubRepository.png" alt="">
@@ -73,8 +103,23 @@
                         
                         <div class="RepositoryDescription">
                             <div>
-                                <p class="RepositoryTitle">Cofrinho</p>
-                                <p class="RepositoryDescriptionText">Este repositório foi feito em um estudo de Java e possui varios</p>
+                                <p class="RepositoryTitle">Tarefas</p>
+                                <p class="RepositoryDescriptionText">Organizador de tarefas. Projeto pessoal em desenvolvimeto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a  href="https://github.com/leonelpucineli/Tarefas">
+                    <div class="Repositories">
+                        <div class="RepositoryImg">
+                            <img src="img/bgGitHubRepository.png" alt="">
+                        </div>
+                        
+                        <div class="RepositoryDescription">
+                            <div>
+                                <p class="RepositoryTitle">Racing Dashboard</p>
+                                <p class="RepositoryDescriptionText">Dashboard UDP de telemetria para jogos de corrida. Projeto pessoal para estudo de redes.</p>
                             </div>
                         </div>
                     </div>
@@ -84,14 +129,23 @@
                 
         </div>
 
-        <div class="RightSide">
-            <ul>Contatos:
-                <li><a href="https://www.linkedin.com/in/leonelpucineli">LinkedIn</a></li>
-                <li><a href="https://github.com/leonelpucineli">GitHub</a></li>
-            </ul>
+        <div class="RightSide" id="contactInfo">
+
+            <p>Informações de contato</p>
+            <form>
+                <label for="nome">Nome: <br></label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br><br>
+        
+                <label for="email">E-mail: <br></label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com" required><br><br>
+        
+                <label for="mensagem">Mensagem: <br></label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+        
+                <input type="submit" value="Enviar">
+            </form>
         </div>
 
     </div>
 </body>
-
 </html>
